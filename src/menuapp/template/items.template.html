@@ -1,0 +1,7 @@
+<ul>
+  <li ng-repeat="item in $ctrl.menuItems">
+    {{ item.short_name }} : {{ item.name }} <span ng-if="item.description">({{ item.description }})</span> - Price: 
+    <span ng-if="item.price_small">${{item.price_small}} (S)</span> 
+    <span ng-if="item.price_large">${{item.price_large}} (L)</span>
+  </li>
+</ul>
